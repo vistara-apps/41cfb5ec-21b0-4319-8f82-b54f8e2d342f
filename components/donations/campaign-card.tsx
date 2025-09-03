@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { Progress as ProgressBar } from '@/components/ui/progress';
 import { formatCurrency, formatDate } from '@/lib/utils';
 import { Heart, Share, Edit } from 'lucide-react';
 import Image from 'next/image';
@@ -62,7 +62,7 @@ export function CampaignCard({ campaign, onDonate, onShare, onEdit }: CampaignCa
               {Math.round(progressPercentage)}%
             </span>
           </div>
-          <Progress value={progressPercentage} className="h-2" />
+          <ProgressBar value={progressPercentage} className="h-2" />
           <div className="flex justify-between items-center text-sm">
             <span className="font-medium text-primary">
               {formatCurrency(campaign.currentAmount)}
@@ -96,17 +96,5 @@ export function CampaignCard({ campaign, onDonate, onShare, onEdit }: CampaignCa
         </div>
       </CardContent>
     </Card>
-  );
-}
-
-// Progress component (simple implementation)
-function Progress({ value, className }: { value: number; className?: string }) {
-  return (
-    <div className={`bg-secondary rounded-full overflow-hidden ${className}`}>
-      <div 
-        className="bg-primary h-full transition-all duration-300" 
-        style={{ width: `${Math.min(value, 100)}%` }}
-      />
-    </div>
   );
 }
