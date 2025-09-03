@@ -1,0 +1,14 @@
+{
+  "name": "PawConnect",
+  "description": "PawConnect is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://41cfb5ec-21b0-4319-8f82-b54f8e2d342f.vistara.dev",
+  "properties": {
+    "app": {
+      "name": "PawConnect",
+      "description": "PawConnect is a Base Mini App built with Zara.",
+      "url": "https://41cfb5ec-21b0-4319-8f82-b54f8e2d342f.vistara.dev",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
