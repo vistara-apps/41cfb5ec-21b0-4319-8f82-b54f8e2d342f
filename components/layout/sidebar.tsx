@@ -12,11 +12,11 @@ import {
   Settings,
   HelpCircle,
   Menu,
-  X,
-  Paw
+  X
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { Paw } from '@/components/icons/paw-icon';
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: Home },

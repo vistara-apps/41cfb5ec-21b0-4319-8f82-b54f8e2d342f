@@ -27,7 +27,9 @@ export default function Header() {
         
         <Wallet>
           <ConnectWallet />
-          <Identity />
+          <Identity>
+            <span>Connected</span>
+          </Identity>
         </Wallet>
       </div>
     </header>
